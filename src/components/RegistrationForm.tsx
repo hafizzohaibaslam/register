@@ -19,7 +19,7 @@ const RegistrationForm: React.FC = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://1hics869g1.execute-api.us-east-1.amazonaws.com/dev/register", formData);
+      const response = await axios.post("http://localhost:3001/api/register", formData);
       console.log(response.data);
       setMessage("User registered successfully!");
     } catch (error) {
